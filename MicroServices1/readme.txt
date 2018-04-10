@@ -14,7 +14,7 @@ Microservices allow large systems to be build from a number of collaborating com
 
 
                                               ------------------------
-												Registration-service    
+						Registration-service    
                                                   (Eureka)
                                               ------------------------
                                                         ^
@@ -27,7 +27,7 @@ Microservices allow large systems to be build from a number of collaborating com
                                     |                                     |
                                     | looks for "account-service"         | registers as "account-service"
                                     |                                     |
-chrome                      -----------------                     --------------------                  ---------------
+chrome                      ==================                     ===================                  ==================
                                                RESTful Requests                            JPA/SQL
 internet explorer  ------>   Web-Service      ----------->           Account-Service     ------- ---->     Accounts (DB)
 
