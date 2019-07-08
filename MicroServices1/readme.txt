@@ -37,11 +37,18 @@ firefox                     -----------------                    ---------------
 
 
 Using an IDE
-You can run the system in your IDE by running the three servers in order: RegistrationService, AccountsService and WebService.
+You can run the system in your IDE by running the three servers in order: 
 
-As discussed in the Blog, open the Eureka dashboard http://localhost:1111 in your browser to see that the ACCOUNTS-SERVICE and WEB-SERVICE applications have registered. Next open the Demo Home Page http://localhost:3333 in and click one of the demo links.
+* RegistrationService, 
+* AccountsService and WebService.
 
-The localhost:3333 web-site is being handled by a Spring MVC Controller in the WebService application, but you should also see logging output from AccountsService showing requests for Account data.
+As discussed in the Blog, open the Eureka dashboard http://localhost:1111 in your browser 
+to see that the ACCOUNTS-SERVICE and WEB-SERVICE applications have registered. 
+
+Next open the Demo Home Page http://localhost:3333 in and click one of the demo links.
+
+The localhost:3333 web-site is being handled by a Spring MVC Controller in the WebService application, 
+but you should also see logging output from AccountsService showing requests for Account data.
 
 Command Line
 You may find it easier to view the different applications by running them from a command line since you can place the three windows side-by-side and watch their log output
@@ -49,10 +56,11 @@ You may find it easier to view the different applications by running them from a
 To do this, open three CMD windows (Windows) or three Terminal windows (MacOS, Linux) and arrange so you can view them conveniently.
 
 In each window, change to the directory where you cloned the demo
-In the first window, build the application using mvn clean package
-In the same window run: java -jar target/microservice-demo-1.1.0.RELEASE.jar registration and wait for it to start up
-Switch to the second window and run: java -jar target/microservice-demo-1.1.0.RELEASE.jar accounts and again wait for it to start up
-In the third window run: java -jar target/microservice-demo-1.1.0.RELEASE.jar web
+1) In the first window, build the application using mvn clean package
+2) In the same window run: java -jar target/microservice-demo-1.1.0.RELEASE.jar registration and wait for it to start up
+3) Switch to the second window and run: java -jar target/microservice-demo-1.1.0.RELEASE.jar accounts and again wait for it to start up
+4) In the third window run: java -jar target/microservice-demo-1.1.0.RELEASE.jar web
+
 In your favorite browser open the same two links: http://localhost:1111 and http://localhost:3333
 You should see servers being registered in the log output of the first (registration) window. As you interact with the web-application (http://localhost:3333) you should logging appear in the second and third windows.
 
